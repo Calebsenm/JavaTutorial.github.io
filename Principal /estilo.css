@@ -28,9 +28,9 @@ body{
 
 header {
 	width:100%; /* Establecemos que el header abarque el 100% del documento */
-	overflow:hidden; /* Eliminamos errores de float */
+	overflow:hidden; /* Eliminamos errores de float * Controla para que el texto no se salga del cuadro asignado */ 
 	background:#252932;
-	margin-bottom:20px;
+	margin-bottom:20px; /* Espacio fuera de la caja */
 }
 
 .wrapper {
@@ -42,14 +42,14 @@ header {
 
 header .logo {
 	color:#f2f2f2;
-	font-size:40px;
+	font-size:40px;/*Tamaño de la letra */
 	line-height:70px;
 	float:left;
 }
 
 header nav {
 	float:right;
-	line-height:70px;
+	line-height:50px; /*Salto entr las lineas*/
 }
 
 header nav a {
@@ -99,43 +99,41 @@ header nav a:hover {
 
 .link {
     color: #fff;
-	text-decoration:none;
+	text-decoration:none;/* Quita el el subraya miento del a o enlace */
     background:#252932;
 	border-radius:10px;
-    display:inline-block;
-	text-decoration:none;
-	padding:10px 20px;
+    display:inline-block; /*Coloca los div verticalmente para que estan a la derecha*/
+	text-decoration:none; /*Quita la decoracion*/ 
+	padding:5px ; 
 	font-size:20px;
-	font-weight:bold;
+	font-weight:bold; 
     line-height:20px;
-    margin: 10px;
-
+    margin: 5px;
     width: 90%;
-
+}
+.link2{
+	text-decoration: none;
+	line-height: 10px;
+	color: #fff;
+    display:inline-block; /*Coloca los div verticalmente para que estan a la derecha*/
+    width: 99%;
+	height: 100%;
+	padding:5px ; 
+	font-weight:bold; 
+    line-height:20px;
+    margin: 0px;
 }
 
 
-.link :hover{
-    background: #f56f3a;
-	border-radius:10px;
+.link :hover{ /*Cudo se selecciona el div*/
+	background: #f56f3a; /*Fondo al undir */
+	border-radius:10px;/*Bordes */
     color: #fff;
-    display:inline-block;
-
-	text-decoration:none;
-	padding:10px 20px;
-	
 	font-size:20px;
-	font-weight:bold;
-	
-   
-    padding-top: 5px;
-    margin-top: 5px;
-    /*Expancion del la introduccion*/
-    line-height:20px;
-  
-	
-
-
+	font-weight:bold; /*Tipo de letra o ancho de la letra*/
+    padding-top: 5px; /*  Espascio por fuera de la caja */
+    margin-top: 5px; /* Mn arriba de la caja */
+    line-height:20px;  
 
 }
 
